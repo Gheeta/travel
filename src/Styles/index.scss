@@ -1,0 +1,124 @@
+:root{
+    --background-color: #0552bd;
+    --background-light: rgb(38, 124, 253);
+    --background-dark: #0f0f0f;
+    --background-yellow: #febb02;
+    --shadow-color:rgba(0,0,0,0.2);
+    --green-color: #008009;
+    --text-dark: #0A0A0A;
+    --text-light: rgba(170, 169, 169, 0.884);
+    --text-gray: #555;
+    --text-white:#fff;
+    --font-size:16px;
+    
+}
+body {
+    margin: 0 ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+@import "partials/navbar.scss";
+
+@import "partials/home.scss";
+
+@import"partials/header.scss";
+
+@import"partials/featured.scss";
+
+@import"partials/propertyList.scss";
+
+@import"partials/featuredProperties.scss";
+
+@import"partials/mailList.scss";
+
+@import"partials/footer.scss";
+
+@import"partials/list.scss";
+
+@import"partials/searchItem.scss";
+
+@import"partials/hotel.scss";
+
+@media screen  and (max-width: 1280px){
+   
+}
+@media screen  and (max-width: 1050px){
+    
+}
+@media screen  and (max-width: 768px){
+    .headerList, .featuredContainer, .pList, .fp{
+        flex-direction: column;
+    }
+    .headerList{
+        justify-content: center;
+    }
+    .navContainer{
+        max-width: 700px;
+    }
+   
+    .headerList{
+        justify-content: center;
+        align-items: center;
+    }
+    .headerListItem {
+        justify-content: flex-start;
+        width: 120px;
+    }
+    .homeTitle{
+        align-self: self-start;
+    }
+    .listWrapper{
+        flex-direction: column;
+    }
+    .listSearch{
+        position: static;
+    }
+    .sliderContainer  > svg{
+        display: none;
+    }
+    .silderMobile{
+        display: block;
+    }
+   
+    // .featuredContainer{
+    //     flex-direction: column;
+    // }
+    // .pList{
+    //     flex-direction: column;
+    // }
+    // .fp{
+    //     flex-direction: column;
+    // }
+}
+@media screen  and (max-width: 480px){
+    .headerList {
+        flex-direction: column;
+    }
+    .featuredContainer{
+        flex-direction: column;
+    }
+    .pList{
+        flex-direction: column;
+    }
+    .fp{
+        flex-direction: column;
+    }
+    .searchItem{
+        flex-direction: column;
+    }
+    .mailInputContainer>button{
+        display: block;
+       margin: 10px auto;
+    }
+
+}
+
